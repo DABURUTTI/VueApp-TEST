@@ -40,6 +40,13 @@
     <v-main>
       <HelloWorld/>
     </v-main>
+     <v-btn
+        v-if="!chip1 && !chip2 && !chip3 && !chip4"
+        close
+        color="primary"
+        dark
+        @click="chip1 = true, chip2 = true, chip3 = true, chip4= true"
+      >
   </v-app>
 </template>
 
